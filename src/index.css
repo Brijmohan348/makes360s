@@ -1,0 +1,94 @@
+/* Navbar */
+.custom-navbar {
+  background: #ffffffcc;
+  backdrop-filter: blur(8px);
+  padding: 12px 0;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: #0077ff !important;
+}
+
+.animate-logo {
+  animation: logo-bounce 2s infinite;
+}
+
+@keyframes logo-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* Dropdown hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  margin-top: 80px; /* space under navbar */
+  padding: 60px 0;
+}
+
+.hero-text {
+  flex: 1;
+  animation: fadeInLeft 1.2s ease-in-out;
+}
+
+.hero-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
+
+.hero-subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111;
+}
+
+.hero-subtitle span {
+  color: #0077ff;
+}
+
+.hero-desc {
+  margin: 20px 0;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.hero-buttons .cta-btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-buttons .cta-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Hero image */
+.hero-image {
+  flex: 1;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hero-img-animate {
+  border-radius: 20px;
+  animation: fadeInRight 1.2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
